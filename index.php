@@ -13,7 +13,7 @@
 		
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="icon" type="image/png" sizes="96x96" href="images/espellbee.png">
-        <meta http-equiv="Refresh" content="1;url=auditionround">
+        <meta http-equiv="Refresh" content="1;url=auditionround.php">
 		
         <style type="text/css">
         
