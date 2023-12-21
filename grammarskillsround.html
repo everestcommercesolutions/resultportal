@@ -38,7 +38,6 @@
 	<style type="text/css">
         @supports (-moz-appearance:none) 
 		{
-      
 			:root
 			{
 				scrollbar-color: #f9a821  #ccd1d1 !important;
@@ -46,6 +45,124 @@
 			}
 		}
     </style>
+	<style type "text/css">
+        
+        .header__link1 a, .header__link2 a 
+        {
+            color: #2e2e2e;
+            position: relative;
+            display: inline-block;
+            padding: 30px 0;
+            height: 80px;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 13px;
+        }
+        
+    	@media screen and (min-width:0\0) 
+    	{ 
+    	    .tablinks
+    	    {
+    		    background-color:#1b1b1b;
+    	    }
+    	}
+	
+        .loading-blink
+        {
+            display:none;
+        }
+
+        .fixed .header 
+        {
+            top: 0;
+            position: fixed;
+            transition: top 250ms ease-out;
+        }
+        
+        .fixed .header__logo 
+        {
+            background: 0 0;
+            height: 100px;
+            top: 19px;
+        }
+
+        .alg 
+        {
+            margin-right: 50px;
+            display: block;
+        }
+        
+        /* @group Blink */
+        .blink 
+        {
+        	-webkit-animation: blink .75s linear infinite;
+        	-moz-animation: blink .75s linear infinite;
+        	-ms-animation: blink .75s linear infinite;
+        	-o-animation: blink .75s linear infinite;
+        	 animation: blink .75s linear infinite;
+        }
+
+        @-webkit-keyframes blink 
+        {
+	        0% { opacity: 1; }
+	        50% { opacity: 1; }
+	        50.01% { opacity: 0; }
+	        100% { opacity: 0; }
+        }
+        
+        @-moz-keyframes blink 
+        {
+	        0% { opacity: 1; }
+	        50% { opacity: 1; }
+	        50.01% { opacity: 0; }
+	        100% { opacity: 0; }
+        }
+
+        @-ms-keyframes blink 
+        {
+	        0% { opacity: 1; }
+	        50% { opacity: 1; }
+	        50.01% { opacity: 0; }
+	        100% { opacity: 0; }
+        }
+        
+        @-o-keyframes blink 
+        {
+	        0% { opacity: 1; }
+	        50% { opacity: 1; }
+	        50.01% { opacity: 0; }
+	        100% { opacity: 0; }
+        }
+        
+        @keyframes blink 
+        {
+	        0% { opacity: 1; }
+	        50% { opacity: 1; }
+	        50.01% { opacity: 0; }
+	        100% { opacity: 0; }
+        }
+        
+        /* @end */
+        a:-webkit-any-link 
+        {
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .page-title h1 
+        {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            /* font-size: 13px; */
+            text-align: center;
+        }
+    </style>
+    
 	<style>
 		
 		.rec 
@@ -55,25 +172,12 @@
 			border: 2px solid white;
 			margin: 0;
 		}
-		
-		@media screen and (min-width:0\0) 
-		{ 
-		    .tablinks
-		    {
-		        background-color:#1b1b1b;
-		    }
-		}
-					
+			
 		.loading
 		{
             display:none;
         }
-
-        .loading-blink
-        {
-            display:none;
-        }
-        
+		
 		.navbaradd
 		{
 			margin-bottom: 0px;
@@ -128,11 +232,11 @@
             margin-top: 39px!important;
             text-align: center;
         }
-		
+        
 	</style>
 	
 	<style type="text/css">
-        
+	
         @media (max-width: 700px) and (min-width: 200px)
         {
             .loading 
@@ -146,7 +250,7 @@
 			{
                 overflow-y: hidden!important;
             }
-            
+     
             .loading-blink
             {
                 display:block!important;
@@ -174,7 +278,7 @@
       	
       	    .blink
       	    {
-	            width: 304px;
+            	width: 304px;
                 height: 50px;
                 background-color: #f9a821;
                 font-weight: bold;
@@ -184,13 +288,13 @@
                 line-height: 19px;
                 animation: blink 1s linear infinite!important;
                 font-family: Rajdhani,sans-serif;
-            }
-            
+	        }
+	
 	        span
 	        {
-		        font-size: 25px;
-		        font-family: cursive;
-		        color: #2e2e2e;
+        		font-size: 25px;
+        		font-family: cursive;
+        		color: #2e2e2e;
 		        font-family: Rajdhani,sans-serif;
 	        }
 	        
@@ -208,18 +312,19 @@
     
         @media (max-width: 1100px) and (min-width: 700px)
         {
+         
             .loading 
             {
                 display: block!important;
                 height: 140px;
                 margin-top: 30%;
             }
-            
+     
             .loading-blink
             {
                 display:block!important;
             }
-            
+
             .fixed .header
             {
                 display:none!important;
@@ -252,13 +357,13 @@
                 line-height: 19px;
                 animation: blink 1s linear infinite!important;
                 font-family: Rajdhani,sans-serif;
-        	}
-        	
+	        }
+	
 	        span
 	        {
-        		font-size: 25px;
-        		font-family: cursive;
-        		color: #2e2e2e;
+		        font-size: 25px;
+		        font-family: cursive;
+		        color: #2e2e2e;
 		        font-family: Rajdhani,sans-serif;
 	        }
 	        
@@ -269,10 +374,10 @@
                 100%{opacity: 1;}
             }
         }
-    
+        
     </style>
-				
-	
+    
+    
 	<!--  topbar section start    -->
 	
 	<link rel="shortcut icon" href="images/logo3.png" type="image/x-icon">
@@ -434,13 +539,13 @@
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav nav-dropdown " data-app-modern-menu="true">
-                                <li class="nav-item"><a class="nav-link link text-white display-4 hvr-underline-from-left page-scroll" href="auditionround.php">
+                                <li class="nav-item"><a class="nav-link link text-white display-4 hvr-underline-from-left page-scroll" href="auditionround.html">
                                     <span class="mbri-home mbr-iconfont mbr-iconfont-btn" style="font-size: 15px;"></span>Audition Round</a></li>
-                                <li class="nav-item"><a class="nav-link link text-white display-4 hvr-underline-from-left" href="performanceround.php">
+                                <li class="nav-item"><a class="nav-link link text-white display-4 hvr-underline-from-left" href="performanceround.html">
                                     <span class="mbri-info mbr-iconfont mbr-iconfont-btn" style="font-size: 15px;"></span> Performance Round</a></li>
-                                <li class="nav-item"><a class="nav-link link text-white display-4 hvr-underline-from-left" href="grammarskillsround.php">
+                                <li class="nav-item"><a class="nav-link link text-white display-4 hvr-underline-from-left" href="grammarskillsround.html">
                                     <span class="mbri-contact-form mbr-iconfont mbr-iconfont-btn" style="font-size: 15px;"></span>Grammar Skills Round</a></li>
-                                <li class="nav-item"><a class="nav-link link text-white display-4 hvr-underline-from-left" href="espellbeecontest.php">
+                                <li class="nav-item"><a class="nav-link link text-white display-4 hvr-underline-from-left" href="espellbeecontest.html">
                                     <span class="mbri-contact-form mbr-iconfont mbr-iconfont-btn" style="font-size: 15px;"></span>eSpellBee Contest</a></li>
                             </ul>
                         </div>
@@ -449,8 +554,8 @@
 
 				<div class="header__link1 retroNav col-lg-4" style="left: 18%;">
 					<p style="font-family: Rajdhani,sans-serif;font-size: 15px;">
-						<li class="alg"><a class="page-scroll "  href="auditionround.php"><span class="hvr-underline-from-left">Audition Round</span></a></li>
-						<li class="alg"><a class="page-scroll" href="performanceround.php"><span class="hvr-underline-from-left">Performance Round</span></a></li>
+						<li class="alg"><a class="page-scroll "  href="auditionround.html"><span class="hvr-underline-from-left">Audition Round</span></a></li>
+						<li class="alg"><a class="page-scroll" href="performanceround.html"><span class="hvr-underline-from-left">Performance Round</span></a></li>
 					</p>
 				</div>
 				
@@ -462,8 +567,8 @@
 				
 				<div class="header__link2 retroNav col-lg-6">
 					<p style="text-transform: lowercase; font-size: 13px;font-family: Rajdhani,sans-serif;font-size: 15px;">
-						<li class="alg"><a href="grammarskillsround.php"><span class="hvr-underline-from-left">Grammar Skills Round</span></a></li>
-						<li class="alg"><a href="espellbeecontest.php"><span class="hvr-underline-from-left" ><span style="text-transform:none;">eSpellBee</span> Contest</span></a></li>
+						<li class="alg"><a href="grammarskillsround.html"><span class="hvr-underline-from-left">Grammar Skills Round</span></a></li>
+						<li class="alg"><a href="espellbeecontest.html"><span class="hvr-underline-from-left" ><span style="text-transform:none;">eSpellBee</span> Contest</span></a></li>
 					</p>
 				</div>
 
@@ -726,38 +831,37 @@
 	
 	<!--  topbar section end    -->
 	
-	
-				
+		
 	<body id="canvas" class="sidebar-mini fixed" style="background: url(images/result.jpg) no-repeat top center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover; background-color: #fff9c7;">
-	        <center><img src="images/loading.gif" class="loading" draggable="false"><div class="blink loading-blink"><span>VISIBLE IN DESKTOP VIEW</span></div></center>
+	    	<center><img src="images/loading.gif" class="loading" draggable="false"><div class="blink loading-blink"><span>VISIBLE IN DESKTOP VIEW</span></div></center>
 		<div class="wrapper">    
 			<div class="content-wrapper">
 			    
 				<div class="page-title">
 					<div class="container">
-						<h1>Results of Performance Round</h1>
+						<h1>Results of Grammar Skills Round</h1>
 					</div>
 				</div>
 				
 				<div class="row">
 					<div class="col-md-12">
 						<div class="navbaradd">              
-							<button class="tablinks" onclick="performance(event, 'class1')" id="defaultOpen">Class 1</a>
-							<button class="tablinks" onclick="performance(event, 'class2')">Class 2</a> 
-							<button class="tablinks" onclick="performance(event, 'class3')">Class 3</a>	
-							<button class="tablinks" onclick="performance(event, 'class4')">Class 4</a>	
-							<button class="tablinks" onclick="performance(event, 'class5')">Class 5</a>	
-							<button class="tablinks" onclick="performance(event, 'class6')">Class 6</a>	
-							<button class="tablinks" onclick="performance(event, 'class7')">Class 7</a>	
-							<button class="tablinks" onclick="performance(event, 'class8')">Class 8</a>	
-							<button class="tablinks" onclick="performance(event, 'class9')">Class 9</a>	
-							<button class="tablinks" onclick="performance(event, 'class10')">Class 10</a>	
-							<button class="tablinks" onclick="performance(event, 'class11')">Class 11</a>	
-							<button class="tablinks" onclick="performance(event, 'class12')">Class 12</a>	
+							<button class="tablinks" onclick="national(event, 'class1')" id="defaultOpen">Class 1</a>
+							<button class="tablinks" onclick="national(event, 'class2')">Class 2</a> 
+							<button class="tablinks" onclick="national(event, 'class3')">Class 3</a>	
+							<button class="tablinks" onclick="national(event, 'class4')">Class 4</a>	
+							<button class="tablinks" onclick="national(event, 'class5')">Class 5</a>	
+							<button class="tablinks" onclick="national(event, 'class6')">Class 6</a>	
+							<button class="tablinks" onclick="national(event, 'class7')">Class 7</a>	
+							<button class="tablinks" onclick="national(event, 'class8')">Class 8</a>	
+							<button class="tablinks" onclick="national(event, 'class9')">Class 9</a>	
+							<button class="tablinks" onclick="national(event, 'class10')">Class 10</a>	
+							<button class="tablinks" onclick="national(event, 'class11')">Class 11</a>	
+							<button class="tablinks" onclick="national(event, 'class12')">Class 12</a>	
 						</div>
 						<div class="card">
 							<div class="card-body">
@@ -774,8 +878,8 @@
 											</tr>
 										</thead>
 										<tbody>
-										    
-												
+											
+											
 											
 										</tbody>
 									</table>
@@ -834,7 +938,7 @@
 											</tr>
 										</thead>
 										<tbody>
-										    
+											
 											
 											
 										</tbody>
@@ -854,8 +958,8 @@
 											</tr>
 										</thead>
 										<tbody>
-										    
-												
+											
+											
 											
 										</tbody>
 									</table>
@@ -895,8 +999,7 @@
 										</thead>
 										<tbody>
 										    
-												
-											
+														
 										</tbody>
 									</table>
 								</div>
@@ -974,7 +1077,8 @@
 										</thead>
 										<tbody>
 										    
-										    
+    										
+    										
 										</tbody>
 									</table>
 								</div>
@@ -994,10 +1098,11 @@
 										<tbody>
 										    
     										
-										
+    										
 										</tbody>
 									</table>
 								</div>
+								
 								
 							</div>  
 						</div>
@@ -1029,7 +1134,7 @@
 		<script type="text/javascript" src="resultdashboardfiles/js/plugins/jquery.dataTables.min.js"></script>
 		<script type="text/javascript" src="resultdashboardfiles/js/plugins/dataTables.bootstrap.min.js"></script>
 		<script>
-		function performance(evt, btype) 
+		function national(evt, btype) 
 		{
 			var i, tabcontent, tablinks;
 			tabcontent = document.getElementsByClassName("content");
@@ -1095,9 +1200,10 @@
         
 	        .content-wrapper
 	        {
+	            margin-left: 0;
 	            background: url(images/bg-pg.png);
             }
-
+            
             .page-title 
             {
                 display: -webkit-box;
@@ -1124,15 +1230,15 @@
             }
             
 		    .rec 
-		    {
+    		{
     			width: 10px;
     			padding: 10px;
     			border: 2px solid white;
     			margin: 0;
-		    }
-		    
-		    .fixed .content-wrapper 
-		    {
+    		}
+		
+    		.fixed .content-wrapper 
+    		{
                 margin-top: 77px;
             }
 		
@@ -1144,7 +1250,7 @@
     			border: 0;
     			min-height: 49px;
     		}
-    
+
     		.tablinks 
     		{
     			background-color: inherit;
@@ -1165,14 +1271,15 @@
     			background-color: white;
     			color: black;
     		}
-    
+
     		.irevenue 
     		{
     			border: none;
     			width: 300%;
     			height: 400px;
     		}
-    		  /* width */
+			
+    		/* width */
             ::-webkit-scrollbar 
             {
                  width: 10px;
@@ -1198,7 +1305,7 @@
 			{
 				background: #ccc; 
 			}
-    		
+            	
 	    </style>
 	    
 	</body>
